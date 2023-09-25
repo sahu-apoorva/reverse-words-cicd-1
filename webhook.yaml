@@ -60,7 +60,6 @@ spec:
             eventTypes:
               - push
       bindings:
-        - name: pipeline-binding
         - ref: <git-triggerbinding>
       template:
         name: reverseword-build-triggertemplate
