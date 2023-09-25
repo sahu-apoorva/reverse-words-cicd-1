@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: reverse-words
+  name: reverse-words
+spec:
+  template:
+    spec:
+      containers:
+      - env:
+        - name: RELEASE
+          value: Production release
+        - $patch: replace
+        image: quay.io/mavazque/tekton-reversewords:2bf8ee461e97e6e2988807c4c061816d259f1da9
+        name: reverse-words
