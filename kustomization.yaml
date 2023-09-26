@@ -2,7 +2,7 @@ namespace: reverse-words-stage
 commonLabels:
   app: reversewords-stage
 bases:
-- github.com/mvazquezc/reverse-words-cicd?ref=config
+- github.com/sahu-apoorva/reverse-words-cicd-1?ref=config
 resources:
 - namespace.yaml
 - route.yaml
